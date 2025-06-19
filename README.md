@@ -1,4 +1,4 @@
-# My Awesome Todo App
+# To do App
 
 A simple minimalist To do app built with React Native and Expo, designed to help you focus on tasks with a clear mind.
 
