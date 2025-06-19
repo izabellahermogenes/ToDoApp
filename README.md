@@ -1,50 +1,62 @@
-# Welcome to your Expo app 👋
+# My Awesome Todo App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple minimalist To do app built with React Native and Expo, designed to help you focus on tasks with a clear mind.
 
-## Get started
+---
 
-1. Install dependencies
+## Tech Stack
 
-   ```bash
-   npm install
-   ```
+- **React Native** with **TypeScript** — Cross-platform mobile UI and logic  
+- **Expo** — Development tools and environment  
+- **React Hooks** — State management (`useState`)  
+- **Animated** and **TouchableOpacity** — Interactive UI elements  
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## Key Features
 
-In the output, you'll find options to open the app in a
+- Categorize todos by mood:  
+  - ✨ Easy Wins  
+  - ‼️ Urgent  
+  - 💭 Someday  
+- Add, toggle complete, and delete todos  
+- Filter todos by all, active, or completed  
+- Visual progress circle showing completion percentage  
+- Responsive and clean UI with mood filters and input controls  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Build Process
 
-## Get a fresh project
+1. Set up a new Expo project with TypeScript support.  
+2. Defined `Todo` interface to type-check todo objects.  
+3. Managed todos, moods, and filters with React hooks (`useState`).  
+4. Implemented functions for adding, toggling, deleting, and filtering todos.  
+5. Created a custom progress circle using Views and transforms (no SVG).  
+6. Styled the app with React Native's `StyleSheet` for consistency and ease of maintenance.  
+7. Tested on device and simulators for smooth user experience.  
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## Lessons Learned
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Using TypeScript interfaces improves code quality and debugging.  
+- Managing multiple states (todos, filters, moods) smoothly with hooks.  
+- Creative UI solutions like progress circle without third-party libraries.  
+- Balancing UX for task input with toggleable input visibility.  
+- Importance of accessibility and clear feedback on user actions.  
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## Areas of Improvement
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Add drag-and-drop to reorder todos by priority.  
+- Support editing existing todos instead of only adding and deleting.  
+- Add notifications/reminders for urgent tasks.  
+- Improve accessibility and internationalization support.  
+- Enhance animations and add theming options (dark mode).
 
-## Join the community
+## Demo
 
-Join our community of developers creating universal apps.
+![Demo GIF](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjdyYXFhOTZ5aTRhOG0wbmh4MTk3M2oxaWkxcmkxdmowdWZvNnlhZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dwwNVSnJLFb86QSslZ/giphy.gif)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
